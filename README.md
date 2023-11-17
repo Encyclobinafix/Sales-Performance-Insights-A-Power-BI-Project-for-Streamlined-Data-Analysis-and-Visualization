@@ -2,9 +2,7 @@
 
 This report offers business users and stakeholders insights into the company's performance, focusing on sales, revenue, and profit. The metrics are further dissected by different managers, sales country, customers' age groups,  etc. 
 
-Here is a link to my interactive Power BI dashboard: 👇
-
-https://app.powerbi.com/groups/me/reports/27093a3f-0147-4cb4-81cb-da7f80b53189/ReportSection75fb6b750fcd4989e1ba?experience=power-bi&bookmarkGuid=Bookmark61231584d0887d5a16ba
+Here is a link to my interactive Power BI dashboard: 👉 [here](https://app.powerbi.com/groups/me/reports/27093a3f-0147-4cb4-81cb-da7f80b53189/ReportSection75fb6b750fcd4989e1ba?experience=power-bi&bookmarkGuid=Bookmark61231584d0887d5a16ba)
 
 ![](DB_1.png)
 
@@ -13,6 +11,30 @@ https://app.powerbi.com/groups/me/reports/27093a3f-0147-4cb4-81cb-da7f80b53189/R
 Welcome to the dynamic world of data insights! My Power BI project dives deep into the realms of sales and profits, offering a comprehensive analysis across diverse regions, countries, products, and age groups. Uncover the trends, discover correlations, and explore the narrative that unfolds within the visual representations. Let the visualizations guide you through a journey of understanding and decision-making, empowering you with actionable insights for strategic business growth and success.
 
 _**Note**: The dataset utilized and the reports generated do not depict any specific company, institution, or country. It is a simulated dataset employed for the purpose of showcasing Power BI skills._
+
+## Skills/Concept Demonstrated:
+
+The following Power BI features were captured in this projects:
+* DAX measures
+* Bookmarking
+* Filters and page navigation
+* Modelling
+* Toooltips
+* Drillthrough and report interation
+* Buttons
+* Fields and numeric parameters
+* Small multiples
+* Binning and grouping
+* Row level secutity
+
+## Data Modelling:
+
+- Automatically derived relationships were adjusted to remove and replace unwanted relationships.
+- The star schema model was deployed
+- There were 2 facts tables and 5 dimension tables.
+
+![](Data_Modelling.png)
+
 
 ## Dynamic Data Analysis Expressions (DAX Measures):
 
@@ -64,6 +86,8 @@ _**Note**: The dataset utilized and the reports generated do not depict any spec
         Top Product by Orders = "Top Product by Orders - " & [Total Orders]
 
 
+![](Calculated_Tables_Measures.png)
+
 ## Problem Statement 1:
 
 As an expert Data Analyst, your company has tasked you to create the measures below that can used in a table to provide Senior Management a quick insight into the monthly and yearly number of products in stock in comparison to number of products sold. The Manangement is planning to revamp their products supply chain but needs to determine the impact on products inventory.
@@ -79,8 +103,7 @@ Measures Required:
 8. Stock 3-Months Rolling Average (e.g., For 2014 October, (149+234+384)/3 = 255.67)
 
 Visualization:
-
-Using a table, I made a visual representation of the data and information requested as ahwon in the table below;
+* Using a table, I made a visual representation of the data and information requested as ahwon in the table below;
 
 ![](Table_2.png)
 
@@ -106,20 +129,19 @@ Answering the question:
 
 The two measures calculate the total revenue differently:
 
-Total Revenue 1:
+* Total Revenue 1:
 
 Multiplies the value of [Quantity Sold] measure by the value of [Total Product Price] measure.
 
-Total Revenue 2:
+* Total Revenue 2:
 
-Uses the SUMX function to iterate over each row in the 'Sales table'.
+This is the correct measure for this analysis. It Uses the SUMX function to iterate over each row in the 'Sales table'.
 Multiplies the 'Quantity_Sold' from the current row by the related 'ProductPrice' from the 'DSP_Products Table' and sums up the calculated values for each row.
 
-In essence, the first measure relies on pre-existing measures or columns and performs a simple multiplication. The second measure explicitly defines the calculation logic within the measure, considering related tables and using the SUMX function. T The choice between them depends on the data model structure and the specific requirements of your analysis.
+In essence, the first measure relies on pre-existing measures or columns and performs a simple multiplication. The second measure explicitly defines the calculation logic within the measure, considering related tables and using the SUMX function. The choice between them depends on the data model structure and the specific requirements of the analysis.
 
 Visualization:
-
-Using a table, I visualized both measures and categorized them my product names to show. The difference can easily be seen in the totals displayed for both of them.
+* Using a table, I visualized both measures and categorized them by product names. The difference can easily be seen in the totals displayed for each of the revenues.
 
 ![](Revenue.png)
 
@@ -129,6 +151,33 @@ You have been recently hired as a Technical Business Intelligence Analyst by DSP
 Your assignment is to employ the complete Microsoft Power BI tools to design, develop and deploy an intuitive and automated dashboard for this Team based on the wireframe provided by the Business Analyst. You have been provided eight datasets containing information about sales, products, customers, and store locations. The csv files are sales, region, gender, products, products_categories, products_subcategrories, age_group, and returns. The objectives of this exercise are to prepare the data, model the data, visualize & analyze the data.
 
 
+Steps taken:
+
+* I created the dashboard below using several features.
+* Cards were used to display the total revenue, total profit, mom revenue, yoy revenue, and total returns.
+* I used clustered column charts, maps, tables, and several DAX measures to create and viisualize insights in a dynamic way.
+* The visualization can be interacted with via the project link provided at the begining of this project on the page titled "Rebuilding the visualization".
+
 Visualization:
 
 ![](DB_2.png)
+
+
+## Problem Statement 4:
+Your Manager asked you to create a dashbboard for the company weekly revenue and 14-day profit trend analysis. This dashboard will help the management to know the trajectory of the company financially. Note that the Line chart visual is dynamic with all the filters shown in the wireframe.
+
+Steps Taken:
+
+* Created a calculated column to add start of week (Sunday as the start day) to my calendar.
+*  Created a measure for the 14-Day Total Profit.
+* Created another measure for the title that is dynamic in nature when certain selections are made.
+* The visualization can be interacted with via the project link provided at the begining of this project on the page titled "Visualization classwork".
+
+Visualization:
+
+![](Trend_Analysis.png)
+
+
+
+
+
