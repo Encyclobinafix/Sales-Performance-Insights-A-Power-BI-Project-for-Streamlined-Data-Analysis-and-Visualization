@@ -216,11 +216,11 @@ Visualization:
 
 ## CONCLUSION:
 
-- This project aimed to showcase my understanding of and proficiency in Powerbi.
+- This project aimed to showcase my understanding of and proficiency in Power BI.
 - So many insights can be deduuced from the different visualizations shown.
 - The most challenging part of this project was writing the correct data analysis expressions to make the visualization of certain key business questions dynamic.
-- I wrote an article on Medium giving 6 tios to writing a correct DAX measure 👉 [here](https://medium.com/@elumelusabina4canada/data-analysis-expressions-dax-c88018b456a0)
-- I feel confident that I can deploy powerBI to extract miningful insights from any provided data.
+- I wrote an article on Medium giving 6 tips to writing a correct DAX measure 👉 [here](https://medium.com/@elumelusabina4canada/data-analysis-expressions-dax-c88018b456a0)
+- I feel confident that I can deploy powerBI to extract meaningful insights from any provided data.
 
   THANK YOU FOR READING! 😄
 
