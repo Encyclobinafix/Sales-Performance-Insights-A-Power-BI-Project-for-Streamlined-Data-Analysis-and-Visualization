@@ -177,7 +177,52 @@ Visualization:
 
 ![](Trend_Analysis.png)
 
+## More Visualizations:
+
+## Dashboard to show weekly orders by differnt age groups
+
+![](Orders_Viz.png)
+
+## Column charts visualizing profit category using the binning and grouping functionalities
+
+![](Profit_category.png)
+
+## Showing tables created by active and inactive relationships
+
+* I wanted the transction and stock quantities together in one table.
+* The only way to achieve this was to create a data model having active and inactive relationships
+
+![](Active_Inactive_rel.png)
+
+## Visualizing data using date clusters
+
+![](Date_clusters.png)
+
+## Visualizing data using decomposition tree
+
+![](Dec_tree.png)
+
+## Visualizing the concept of small multiples
+
+![](Small_multiples.png)
+
+## Visualizing the concept of field parameters
+
+![](field_parameter.png)
+
+## Visualizing the concept of numeric parameters
+
+![](Numeric_Parameters.png)
+
+## Visualizing the concept of 
 
 
+## CONCLUSION:
 
+- This project aimed to showcase my understanding of and proficiency in Powerbi.
+- So many insights can be deduuced from the different visualizations shown.
+- The most challenging part of this project was writing the correct data analysis expressions to make the visualization of certain key business questions dynamic.
+- I feel confident that I can deploy powerBI to extract miningful insights from any provided data.
+
+  THANK YOU FOR READING! 😄
 
