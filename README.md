@@ -196,7 +196,7 @@ Visualization:
 
 ## Visualizing data using date clusters
 
-![](Date_clusters.png)
+![](Date_Clusters.png)
 
 ## Visualizing data using decomposition tree
 
@@ -213,9 +213,6 @@ Visualization:
 ## Visualizing the concept of numeric parameters
 
 ![](Numeric_Parameters.png)
-
-## Visualizing the concept of 
-
 
 ## CONCLUSION:
 
